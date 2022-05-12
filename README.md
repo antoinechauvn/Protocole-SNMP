@@ -27,6 +27,9 @@ La MIB est une structure arborescente dont chaque noeud est défini par un nombr
 Deux MIB publics ont été normalisées: MIB I et MIB II (dite 1 et 2).<br>
 Un fichier MIB est un document texte écrit en langage ASN.1 (Abstract Syntax Notation 1) qui décrit les variables, les tables et les alarmes gérées au sein d’une MIB.
 
+### OID
+OID est un acronyme correspondant à Object Identifier, c’est-à-dire identifiant d’objet.Les OID permettent d’identifier de manière unique chacun des objets gérés qui sont définis dans des fichiers MIB.
+
 **Voici un exemple de structure de table MIB :**
 
 ![image](https://user-images.githubusercontent.com/83721477/168039803-5fde58e6-63c9-433d-855f-b63f9a1b391c.png)
