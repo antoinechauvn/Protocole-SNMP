@@ -11,7 +11,7 @@ d’appareils et de types de logiciels.
 ```
 
 ## Principe de fonctionnement
-Manager SNMP :
+### Manager SNMP :
 Un gestionnaire ou système de gestion est une entité distincte chargée de communiquer avec les périphériques réseau mis en œuvre par l'agent SNMP. Il s'agit généralement d'un ordinateur utilisé pour exécuter un ou plusieurs systèmes de gestion de réseau.
 
 ### Agent SNMP :
