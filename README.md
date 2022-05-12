@@ -10,7 +10,6 @@ informations relatives aux appareils connectés à un réseau de façon standard
 d’appareils et de types de logiciels.
 ```
 
-## Principe de fonctionnement
 ### Manager SNMP :
 Un gestionnaire ou système de gestion est une entité distincte chargée de communiquer avec les périphériques réseau mis en œuvre par l'agent SNMP. Il s'agit généralement d'un ordinateur utilisé pour exécuter un ou plusieurs systèmes de gestion de réseau.
 
@@ -29,6 +28,14 @@ Un fichier MIB est un document texte écrit en langage ASN.1 (Abstract Syntax No
 
 ### OID
 OID est un acronyme correspondant à Object Identifier, c’est-à-dire identifiant d’objet.Les OID permettent d’identifier de manière unique chacun des objets gérés qui sont définis dans des fichiers MIB.
+
+## Principe de fonctionnement
+
+Le protocole SNMP a deux façons de travailler:
+* Le polling
+* Les traps
+
+Le polling consiste à envoyer des requêtes distantes de manière automatique ou à la demande, en effectuant une opération de requête synchronisée.<br>Les traps sont des messages envoyés par des appareils SNMP à une adresse configurée en fonction de modifications ou d’événements, de manière désynchronisée.
 
 **Voici un exemple de structure de table MIB :**
 
