@@ -38,7 +38,7 @@ Le protocole SNMP a deux façons de travailler:
 Le `polling` consiste à envoyer des requêtes distantes de manière automatique ou à la demande, en effectuant une opération de requête synchronisée.
 <br>Les `traps` sont des messages envoyés par des appareils SNMP à une adresse configurée en fonction de modifications ou d’événements, de manière désynchronisée.
 
-**Voici un exemple de structure de table MIB :**
+### Structure d'une table MIB
 
 ![image](https://user-images.githubusercontent.com/83721477/168039803-5fde58e6-63c9-433d-855f-b63f9a1b391c.png)
 
