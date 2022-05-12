@@ -51,3 +51,15 @@ Il existe différents types de messages SNMP qui permettent de mettre en place u
 * `InformRequest`<br>Ce type de message a été introduit sur SNMP v2 pour donner au manager la possibilité d’accuser réception du message trap émanant d’un agent.<br>Certains agents sont configurés pour continuer d‘envoyer un trap jusqu’à réception d’un message de type Inform.
 
 * `Report`<br>Les messages de type sont uniquement disponibles sur SNMP v3.<br>Ils permettent à un manager SNMP de déterminer la nature du problème qui a été détecté par l’agent SNMP distant.<br>En fonction du type d’erreur mis au jour, le moteur SNMP peut essayer d’envoyer une version corrigée du message SNMP.<br>Si cela s’avère impossible, il peut signaler l’erreur à l’application au nom de laquelle la requête SNMP infructueuse avait été envoyée. [RFC3412]
+
+## Versions SNMP
+* `SNMPv1` (ancien standard): Ceci est la première version du protocole, tel que définie dans le RFC 1157.. On dit que la sécurité de cette version est triviale, car la seule vérification qui est faite est basée sur la chaîne de caractères  » community « . SNMPsec (historique): Cette version ajoute de la sécurité au protocole SNMPv1. La sécurité est basée sur des groupes. Très peu ou aucun manufacturiers n’a utilisé cette version qui est maintenant largement oubliée.
+RFC 1155
+* `SNMPv2p` (historique): Beaucoup de travaux on été exécutés pour faire une mise à jour de SNMPv1. Ces travaux ne portaient pas seulement sur la sécurité. Le résultat est une mise à jour des opérations du protocole, des nouvelles opérations, des nouveaux types de données. La sécurité est basée sur les groupes de SNMPsec.
+* `SNMPv2c` (expérimental): Cette version du protocole est appelé  » community stringbased SNMPv2 « . Ceci est une amélioration des opérations de protocole et des  types d’opérations de SNMPv2p et utilise la sécurité par chaîne de caractères « community  » de SNMPv1.
+RFC – 1441
+* `SNMPv2u` (expérimental): Cette version du protocole utilise les opérations, les types de données de SNMPv2c et la sécurité basée sur les usagers.
+* `SNMPv2*` (expérimental): Cette version combine les meilleures parties de SNMPv2p et SNMPv2u. Les documents qui décrivent cette version n’ont jamais été publiés dans 12 les RFC. Des copies de ces documents peuvent être trouvées sur le site web et SNMP Research (un des premiers à défendre de cette version).
+RFC – 1901
+* `SNMPv3` (standard actuel): Cette version comprend une combinaison de la sécurité basée sur les usagers et les types et les opérations de SNMPv2p, avec en plus la capacité pour les  » proxies « . La sécurité est basée sur ce qui se trouve dans SNMPv2u et SNMPv2*.
+RFC – 3411
