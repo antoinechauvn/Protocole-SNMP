@@ -36,7 +36,7 @@ On aura par exemple sur un commutateur Nortel Passport l’OID `1.3.6.1.4.1.2272
 ### Les différents types de messages SNMP
 Il existe différents types de messages SNMP qui permettent de mettre en place un mécanisme de supervision réseau via SNMP :
 
-* GetRequest<br>C’est le message SNMP qu’un manager SNMP est le plus souvent amené à utiliser pour demander des données. L’appareil ciblé renvoie la valeur demandée sous la forme d’un message de type Response.
+* GetRequest<br>C’est le message SNMP qu’un manager SNMP est le plus souvent amené à utiliser pour demander des données.<br>L’appareil ciblé renvoie la valeur demandée sous la forme d’un message de type Response.
 
 * GetNextRequest<br>Le manager SNMP peut envoyer un message de ce type pour déterminer les informations que l’appareil peut envoyer.<br>En commençant par l’OID 0, le manager peut continuer à requérir les données immédiatement consécutives, ce jusqu’à ce qu’il n’y ait plus des données « suivantes ».<br>Les utilisateurs peuvent ainsi accéder à toutes les informations disponibles concernant un périphérique donné, même s’ils n’avaient pas nécessairement connaissance de l’existence du système ou de l’appareil qui répond.
 
