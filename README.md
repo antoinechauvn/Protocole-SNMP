@@ -35,7 +35,8 @@ Le protocole SNMP a deux façons de travailler:
 * Le polling
 * Les traps
 
-Le polling consiste à envoyer des requêtes distantes de manière automatique ou à la demande, en effectuant une opération de requête synchronisée.<br>Les traps sont des messages envoyés par des appareils SNMP à une adresse configurée en fonction de modifications ou d’événements, de manière désynchronisée.
+Le `polling` consiste à envoyer des requêtes distantes de manière automatique ou à la demande, en effectuant une opération de requête synchronisée.
+<br>Les `traps` sont des messages envoyés par des appareils SNMP à une adresse configurée en fonction de modifications ou d’événements, de manière désynchronisée.
 
 **Voici un exemple de structure de table MIB :**
 
