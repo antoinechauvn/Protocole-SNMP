@@ -10,6 +10,9 @@ informations relatives aux appareils connectés à un réseau de façon standard
 d’appareils et de types de logiciels.
 ```
 
+### Communauté SNMP :
+Une communauté SNMP définit un groupes de périphériques et de systèmes de gestion. Seuls les périphériques et les systèmes de gestion qui sont membres de la même communauté peuvent échanger des messages SNMP. Un périphérique ou un système de gestion peuvent être membres de plusieurs communautés.
+
 ### Manager SNMP :
 Un gestionnaire ou système de gestion est une entité distincte chargée de communiquer avec les périphériques réseau mis en œuvre par l'agent SNMP. Il s'agit généralement d'un ordinateur utilisé pour exécuter un ou plusieurs systèmes de gestion de réseau.
 
@@ -63,6 +66,10 @@ Il existe différents types de messages SNMP qui permettent de mettre en place u
 
 * `Report`<br>Les messages de type sont uniquement disponibles sur SNMP v3.<br>Ils permettent à un manager SNMP de déterminer la nature du problème qui a été détecté par l’agent SNMP distant.<br>En fonction du type d’erreur mis au jour, le moteur SNMP peut essayer d’envoyer une version corrigée du message SNMP.<br>Si cela s’avère impossible, il peut signaler l’erreur à l’application au nom de laquelle la requête SNMP infructueuse avait été envoyée. [RFC3412]
 
+![image](https://user-images.githubusercontent.com/83721477/168548018-3e8855ef-6099-4188-afda-641ac02b3c23.png)
+![image](https://user-images.githubusercontent.com/83721477/168548061-4626c092-33b8-4e94-84db-6bea97ddd3b0.png)
+
+
 ## Versions SNMP
 * `SNMPv1` (ancien standard): Ceci est la première version du protocole, tel que définie dans le RFC 1157.. On dit que la sécurité de cette version est triviale, car la seule vérification qui est faite est basée sur la chaîne de caractères  » community « . SNMPsec (historique): Cette version ajoute de la sécurité au protocole SNMPv1. La sécurité est basée sur des groupes. Très peu ou aucun manufacturiers n’a utilisé cette version qui est maintenant largement oubliée.
 RFC 1155
@@ -79,3 +86,6 @@ RFC – 1901
 
 * `SNMPv3` (standard actuel): Cette version comprend une combinaison de la sécurité basée sur les usagers et les types et les opérations de SNMPv2p, avec en plus la capacité pour les  » proxies « . La sécurité est basée sur ce qui se trouve dans SNMPv2u et SNMPv2*.
 RFC – 3411
+
+![image](https://user-images.githubusercontent.com/83721477/168548192-5c7348d7-d679-484f-8052-d853bd685278.png)
+
